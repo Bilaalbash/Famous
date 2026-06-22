@@ -1,241 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Famous Food Store | Butchers, Grocers & Wholesalers — Middlesbrough</title>
-  <meta name="description" content="Famous Food Store in Middlesbrough — your local butchers, grocers and wholesalers. Fresh meat & poultry, groceries, flour & rice, dairy and wholesale packaging. Order now: 01642 222600." />
-  <meta name="theme-color" content="#1d4ed8" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Famous Food Store — Butchers, Grocers & Wholesalers" />
-  <meta property="og:description" content="Fresh meat & poultry, groceries, flour & rice, dairy and wholesale packaging in Middlesbrough. Order now: 01642 222600." />
-  <meta property="og:type" content="business.business" />
-  <meta property="og:image" content="assets/banner.jpeg" />
-
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SHIFT · The Coolest Driving Handbook</title>
+<meta name="description" content="An interactive driving instruction handbook — controls, the MSM routine, road signs, manoeuvres, hazard perception and a quiz. Learn to drive in style." />
+<meta name="theme-color" content="#0a0e1a" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%97%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
 
-  <!-- Top bar -->
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <span class="topbar__item">📍 59 Gresham Road, Middlesbrough, TS1 4LT</span>
-      <a class="topbar__item topbar__phone" href="tel:01642222600">📞 01642 222600</a>
+<!-- reading progress -->
+<div class="progress" id="progress"><span id="progressBar"></span></div>
+
+<!-- nav -->
+<header class="nav">
+  <a href="#top" class="nav__brand">SHIFT<span>/</span>handbook</a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#cockpit">Cockpit</a>
+    <a href="#msm">MSM</a>
+    <a href="#lights">Lights</a>
+    <a href="#signs">Signs</a>
+    <a href="#parking">Manoeuvres</a>
+    <a href="#hazards">Hazards</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__road" aria-hidden="true">
+    <div class="lane"></div>
+    <div class="car">🚗</div>
+  </div>
+  <div class="hero__inner">
+    <span class="kicker">The interactive driving handbook</span>
+    <h1 class="hero__title">Learn to <span class="grad">drive</span>.<br/>Look <span class="grad grad--2">cool</span> doing it.</h1>
+    <p class="hero__sub">Everything a learner needs — the controls, the routine, the signs, the manoeuvres and the mindset — turned into something you'll actually want to read.</p>
+    <div class="hero__cta">
+      <a href="#cockpit" class="btn btn--primary">Start the lesson ↓</a>
+      <a href="#quiz" class="btn btn--ghost">Test yourself</a>
+    </div>
+    <div class="hero__stats">
+      <div><b id="statChapters">6</b><span>chapters</span></div>
+      <div><b>40+</b><span>tips</span></div>
+      <div><b>10</b><span>quiz questions</span></div>
     </div>
   </div>
+  <div class="scroll-cue" aria-hidden="true">scroll</div>
+</section>
 
-  <!-- Header / Nav -->
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Famous Food Store home">
-        <img src="assets/logo.png" alt="Famous — Butchers, Grocers, Wholesalers" class="brand__logo" />
-      </a>
+<!-- COCKPIT -->
+<section class="section" id="cockpit">
+  <div class="wrap reveal">
+    <p class="eyebrow">Chapter 01</p>
+    <h2 class="h2">Know your cockpit</h2>
+    <p class="lead">Before the wheels turn, master the space around you. Tap a control to learn what it does.</p>
 
-      <nav class="nav" id="nav">
-        <a href="#categories" class="nav__link">Shop</a>
-        <a href="#about" class="nav__link">About</a>
-        <a href="#why" class="nav__link">Why Us</a>
-        <a href="#visit" class="nav__link">Visit</a>
-        <a href="#visit" class="nav__cta">Order Now</a>
-      </nav>
-
-      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <span class="hero__eyebrow">Butchers · Grocers · Wholesalers</span>
-        <h1 class="hero__title">Fresh food &amp; everyday essentials, all under one roof.</h1>
-        <p class="hero__text">
-          From quality halal meat &amp; poultry to groceries, flour, rice, dairy and
-          wholesale packaging — Famous Food Store has Middlesbrough covered, retail and trade.
-        </p>
-        <div class="hero__actions">
-          <a href="tel:01642222600" class="btn btn--primary">📞 Call to Order — 01642 222600</a>
-          <a href="#categories" class="btn btn--ghost">Browse Departments</a>
-        </div>
-        <ul class="hero__badges">
-          <li>✔ Fresh daily</li>
-          <li>✔ Retail &amp; wholesale</li>
-          <li>✔ Local to Middlesbrough</li>
-        </ul>
+    <div class="cockpit">
+      <div class="cockpit__diagram">
+        <button class="hot" style="--x:50%;--y:42%" data-ctrl="wheel" aria-label="Steering wheel">🎯</button>
+        <button class="hot" style="--x:22%;--y:78%" data-ctrl="clutch" aria-label="Clutch">🦶</button>
+        <button class="hot" style="--x:42%;--y:80%" data-ctrl="brake" aria-label="Brake">🛑</button>
+        <button class="hot" style="--x:62%;--y:80%" data-ctrl="gas" aria-label="Accelerator">⚡</button>
+        <button class="hot" style="--x:78%;--y:55%" data-ctrl="gear" aria-label="Gear stick">🕹️</button>
+        <button class="hot" style="--x:30%;--y:30%" data-ctrl="mirror" aria-label="Mirror">🪞</button>
+        <div class="cockpit__wheel">🚘</div>
+      </div>
+      <div class="cockpit__info" id="ctrlInfo">
+        <h3 id="ctrlTitle">Pick a control</h3>
+        <p id="ctrlText">Tap any glowing dot on the dashboard to see what it does and how the pros use it.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Categories -->
-  <section class="section" id="categories">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Our Departments</h2>
-        <p class="section__sub">Everything you need for the kitchen, the household and the business.</p>
+<!-- MSM -->
+<section class="section section--alt" id="msm">
+  <div class="wrap reveal">
+    <p class="eyebrow">Chapter 02</p>
+    <h2 class="h2">The golden routine: <span class="grad">M·S·M</span></h2>
+    <p class="lead">Mirror — Signal — Manoeuvre. Run this before every move and you'll already drive better than half the road.</p>
+    <div class="steps">
+      <div class="step"><span class="step__n">1</span><h3>Mirror</h3><p>Check your mirrors to know exactly what's around and behind you. Knowledge before action.</p></div>
+      <div class="step__arrow">→</div>
+      <div class="step"><span class="step__n">2</span><h3>Signal</h3><p>Indicate in good time so others can read your intention. Communicate, don't surprise.</p></div>
+      <div class="step__arrow">→</div>
+      <div class="step"><span class="step__n">3</span><h3>Manoeuvre</h3><p>Position, speed, look. Only move when it's safe — then commit smoothly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAFFIC LIGHTS -->
+<section class="section" id="lights">
+  <div class="wrap reveal">
+    <p class="eyebrow">Chapter 03</p>
+    <h2 class="h2">Read the lights</h2>
+    <p class="lead">A live signal — watch the sequence. In the UK it's red → red&amp;amber → green → amber → red.</p>
+    <div class="lights-row">
+      <div class="signal" id="signal">
+        <span class="bulb red"></span>
+        <span class="bulb amber"></span>
+        <span class="bulb green"></span>
       </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">🥩</div>
-          <h3 class="card__title">Meat &amp; Poultry</h3>
-          <p class="card__text">Fresh cuts, mince, chicken and more — prepared by our in-house butchers to your liking.</p>
-        </article>
-
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">🛒</div>
-          <h3 class="card__title">Groceries</h3>
-          <p class="card__text">Pantry staples, spices, fresh produce and a wide range of world foods.</p>
-        </article>
-
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">📦</div>
-          <h3 class="card__title">Wholesale Packaging</h3>
-          <p class="card__text">Foil trays, containers, bags and catering supplies — bulk prices for trade.</p>
-        </article>
-
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">🌾</div>
-          <h3 class="card__title">Flour &amp; Rice</h3>
-          <p class="card__text">Trusted brands of atta, flour and rice in family and catering sizes.</p>
-        </article>
-
-        <article class="card">
-          <div class="card__icon" aria-hidden="true">🧀</div>
-          <h3 class="card__title">Dairy</h3>
-          <p class="card__text">Yoghurt, milk, butter, cheese and chilled essentials, fresh and stocked daily.</p>
-        </article>
-
-        <article class="card card--cta">
-          <h3 class="card__title">Can't find it?</h3>
-          <p class="card__text">Give us a call — if it's food or packaging, chances are we've got it or can get it.</p>
-          <a href="tel:01642222600" class="btn btn--primary btn--sm">Call 01642 222600</a>
-        </article>
+      <div class="signal__readout">
+        <h3 id="lightLabel">RED</h3>
+        <p id="lightText">Stop. Wait behind the line until the light changes.</p>
+        <button class="btn btn--ghost btn--sm" id="lightPause">Pause sequence</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About -->
-  <section class="section section--alt" id="about">
-    <div class="container about">
-      <div class="about__media">
-        <img src="assets/banner.jpeg" alt="Famous Food Store departments" loading="lazy" />
+<!-- ROAD SIGNS -->
+<section class="section section--alt" id="signs">
+  <div class="wrap reveal">
+    <p class="eyebrow">Chapter 04</p>
+    <h2 class="h2">Sign language</h2>
+    <p class="lead">Shape tells you the type before you even read it. Hover / tap a card to flip it.</p>
+    <div class="signs" id="signs-grid"></div>
+    <p class="note">🔺 Triangles warn · 🔴 Circles order · 🟦 Rectangles inform</p>
+  </div>
+</section>
+
+<!-- MANOEUVRES -->
+<section class="section" id="parking">
+  <div class="wrap reveal">
+    <p class="eyebrow">Chapter 05</p>
+    <h2 class="h2">Nail the parallel park</h2>
+    <p class="lead">The manoeuvre everyone fears. Press play and watch the line — then read the beats.</p>
+    <div class="park">
+      <div class="park__stage">
+        <div class="kerb"></div>
+        <div class="parked parked--a">🚙</div>
+        <div class="parked parked--b">🚙</div>
+        <div class="mover" id="mover">🚗</div>
+        <div class="slot">SPACE</div>
       </div>
-      <div class="about__content">
-        <h2 class="section__title">Your local food store &amp; wholesaler</h2>
-        <p>
-          Famous Food Store is a Middlesbrough favourite for households and businesses alike.
-          We bring the butcher's counter, the grocer's shelves and the wholesaler's warehouse
-          together in one friendly shop on Gresham Road.
-        </p>
-        <p>
-          Whether you're picking up dinner for the family or stocking up your restaurant,
-          takeaway or shop, you'll find quality products at honest prices — with service
-          that remembers your name.
-        </p>
-        <div class="stats">
-          <div class="stat"><span class="stat__num">5</span><span class="stat__label">Departments</span></div>
-          <div class="stat"><span class="stat__num">Retail</span><span class="stat__label">&amp; Wholesale</span></div>
-          <div class="stat"><span class="stat__num">Local</span><span class="stat__label">Middlesbrough</span></div>
-        </div>
+      <button class="btn btn--primary btn--sm" id="parkBtn">▶ Play manoeuvre</button>
+      <ol class="park__steps">
+        <li>Pull up level with the parked car, ~1m gap.</li>
+        <li>Reverse slowly; full lock toward the kerb as your back hits their bumper.</li>
+        <li>When at ~45°, straighten the wheels and keep reversing.</li>
+        <li>Full lock the other way to swing the front in.</li>
+        <li>Straighten up, centre in the space. Done. 😎</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- HAZARDS -->
+<section class="section section--alt" id="hazards">
+  <div class="wrap reveal">
+    <p class="eyebrow">Chapter 06</p>
+    <h2 class="h2">Think like a hazard-spotter</h2>
+    <p class="lead">Good drivers aren't faster — they see sooner. Build these instincts.</p>
+    <div class="hazards">
+      <div class="hz"><div class="hz__i">👀</div><h3>Scan &amp; plan</h3><p>Keep your eyes moving — far ahead, mirrors, sides. Always have an escape route.</p></div>
+      <div class="hz"><div class="hz__i">🚸</div><h3>Expect the unexpected</h3><p>Kids, cyclists, doors opening. Assume the worst near schools, junctions and parked cars.</p></div>
+      <div class="hz"><div class="hz__i">↔️</div><h3>Keep space</h3><p>Two-second gap — double it in rain, multiply in ice. Space buys you time.</p></div>
+      <div class="hz"><div class="hz__i">🌧️</div><h3>Read conditions</h3><p>Slow for rain, fog, sun glare and worn surfaces. Smooth inputs win.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="section" id="quiz">
+  <div class="wrap reveal">
+    <p class="eyebrow">Final exam</p>
+    <h2 class="h2">Are you road-ready?</h2>
+    <p class="lead">Ten questions. No pressure. (Okay, a little pressure.)</p>
+    <div class="quiz" id="quizBox">
+      <div class="quiz__bar"><span id="quizProgress"></span></div>
+      <div class="quiz__q" id="quizQ">Loading…</div>
+      <div class="quiz__opts" id="quizOpts"></div>
+      <div class="quiz__foot">
+        <span id="quizCount"></span>
+        <span id="quizScore">Score: 0</span>
       </div>
     </div>
-  </section>
-
-  <!-- Why us -->
-  <section class="section" id="why">
-    <div class="container">
-      <div class="section__head">
-        <h2 class="section__title">Why shop with Famous?</h2>
-      </div>
-      <div class="features">
-        <div class="feature">
-          <div class="feature__icon">🥇</div>
-          <h3>Quality first</h3>
-          <p>Fresh meat and produce we'd serve our own families — checked and restocked daily.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">💷</div>
-          <h3>Great value</h3>
-          <p>Retail and wholesale pricing, so you save more the more you buy.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">🏪</div>
-          <h3>One-stop shop</h3>
-          <p>Meat, groceries, flour, rice, dairy and packaging — all in one trip.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__icon">🤝</div>
-          <h3>Trade welcome</h3>
-          <p>Reliable bulk supply for restaurants, takeaways, caterers and shops.</p>
-        </div>
-      </div>
+    <div class="quiz__result" id="quizResult" hidden>
+      <h3 id="resultTitle"></h3>
+      <p id="resultText"></p>
+      <button class="btn btn--primary btn--sm" id="quizRetry">Try again ↻</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Visit / Contact -->
-  <section class="section section--dark" id="visit">
-    <div class="container visit">
-      <div class="visit__info">
-        <h2 class="section__title section__title--light">Visit or order today</h2>
-        <p class="visit__lead">Pop in store or call ahead — we're ready to help.</p>
+<footer class="footer">
+  <p class="footer__big">Now go drive. 🚗💨</p>
+  <p class="footer__small">SHIFT — an interactive driving handbook. Educational guide only; always follow the official Highway Code and your instructor.</p>
+</footer>
 
-        <ul class="contact-list">
-          <li>
-            <span class="contact-list__label">Call</span>
-            <a href="tel:01642222600">01642 222600</a>
-          </li>
-          <li>
-            <span class="contact-list__label">Address</span>
-            <span>59 Gresham Road, Middlesbrough, TS1 4LT</span>
-          </li>
-          <li>
-            <span class="contact-list__label">Facebook</span>
-            <a href="https://www.facebook.com/famousfoodstore" target="_blank" rel="noopener">famousfoodstore</a>
-          </li>
-          <li>
-            <span class="contact-list__label">Instagram</span>
-            <a href="https://www.instagram.com/famousfoodstore" target="_blank" rel="noopener">famousfoodstore</a>
-          </li>
-        </ul>
-
-        <a href="tel:01642222600" class="btn btn--accent">📞 Order Now</a>
-      </div>
-
-      <div class="visit__map">
-        <iframe
-          title="Famous Food Store location map"
-          src="https://www.google.com/maps?q=59+Gresham+Road,+Middlesbrough,+TS1+4LT&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <img src="assets/logo.png" alt="Famous Food Store" class="footer__logo" />
-      <div class="footer__meta">
-        <p>59 Gresham Road, Middlesbrough, TS1 4LT · <a href="tel:01642222600">01642 222600</a></p>
-        <p class="footer__copy">© <span id="year"></span> Famous Food Store — Butchers · Grocers · Wholesalers</p>
-      </div>
-      <div class="footer__social">
-        <a href="https://www.facebook.com/famousfoodstore" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-        <a href="https://www.instagram.com/famousfoodstore" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-      </div>
-    </div>
-  </footer>
-
-  <a href="tel:01642222600" class="floating-call" aria-label="Call Famous Food Store">📞</a>
-
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
